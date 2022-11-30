@@ -318,7 +318,6 @@ ul.links li {
     .cart_content {
         top: 90px;
         left: 50%;
-        right: auto;
         height: auto;
         width: 95%;
         transform: translateX(-50%);
@@ -402,7 +401,7 @@ main {
     border-radius: 12px;
 }
 .prod_imgs_list li.active img {
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 /* prod details and add to card btn */
