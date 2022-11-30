@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>E-commerce product page</title>
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="leftH">
+      <div class="burger_icon">
+        <span></span>
+      </div>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <nav>
+        <ul class="links">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="user">
+      <div class="cart">
+        <img src="./images/icon-cart.svg" alt="cart">
+        <div class="cart_items_div">
+          <span class="cart_items">0</span>
+        </div>
+      </div>
+      <div class="cart_content">
+        <h3>Cart</h3>
+        <div class="prod_in_cart hidden">
+          <img width="70" src="./images/image-product-1.jpg" alt="prod">
+          <div class="cart_details">
+            <p>Fall Limited Edition Sneakers</p>
+            <span class="prod_price_in_cart">&dollar;125.00</span>
+            <span>x</span>
+            <span class="items_in_cart">3</span>
+            <span>=</span>
+            <span class="cart_total">375.00</span>
+          </div>
+          <button class="delete_cart_items" type="button"><img src="./images/icon-delete.svg" alt="icon"></button>
+          <button type="button" class="check_out_btn">Checkout</button>
+        </div>
+        <p class="empty">Your cart is empty</p>
+      </div>
+      <div class="account">
+        <div class="userImg">
+          <img src="./images/image-avatar.png" alt="user_img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="prod_imgs">
+      <div class="mainImg_div">
+        <img id="selected_img" src="./images/image-product-1.jpg" alt="product_image">
+      </div>
+      <ul class="prod_imgs_list">
+        <li class="active"><img src="./images/image-product-1.jpg" alt=""></li>
+        <li><img src="./images/image-product-2.jpg" alt=""></li>
+        <li><img src="./images/image-product-3.jpg" alt=""></li>
+        <li><img src="./images/image-product-4.jpg" alt=""></li>
+      </ul>
+    </div>
+    <div class="prod_details">
+      <span >Sneaker Company</span>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div class="prod_price">
+        <div class="price" id="price">&dollar;125.00</div>
+        <span class="discount_amount">50%</span>
+        <div class="old_price"> <del> &dollar;250.00</del></div>
+      </div>
+      <div class="add_to_cart_div">
+        <div class="prod_amount_div">
+          <button id="subtrac_item" type="button">-</button>
+          <span id="prodAmount_span">1</span>
+          <button id="add_item" type="button">+</button>
+        </div>
+        <button type="button" id="add_to_cart">Add to cart</button>
+      </div>
+    </div>
+  </main>
+
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="index.js"></script>
+</body>
+</html>
