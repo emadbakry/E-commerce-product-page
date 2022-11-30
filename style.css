@@ -318,6 +318,7 @@ ul.links li {
     .cart_content {
         top: 90px;
         left: 50%;
+        right: auto;
         height: auto;
         width: 95%;
         transform: translateX(-50%);
@@ -328,8 +329,8 @@ ul.links li {
     display: block;
     position: absolute;
     background-color: #fff;
-    margin: 80px 30px 30px;
-    box-shadow: 0 10px 25px -15px #333;
+    margin: 80px 20px 30px;
+    box-shadow: 0 10px 30px -15px #333;
 }
 .burger_icon[clicked] ~ nav ul.links {
     display: block;
