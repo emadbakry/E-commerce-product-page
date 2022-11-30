@@ -145,8 +145,8 @@ ul.links li {
 }
 .cart .cart_items_div {
     position: absolute;
-    left: -15px;
-    top: -15px;
+    right: -5px;
+    top: -5px;
     color: #fff;
     font-weight: 700;
     background-color: var(--main-color);
@@ -242,7 +242,7 @@ ul.links li {
     border-radius: 100px;
 }
 .burger_icon {
-    padding: 15px;
+    padding: 15px 5px 15px 0px;
     cursor: pointer;
     display: none;
       --rotate:rotate(0deg);
@@ -299,7 +299,32 @@ ul.links li {
     }
 
 }
-
+@media only screen and (max-width:491px) { 
+    header {
+        padding: 15px 10px;
+    }
+    .logo img {
+        width: 120px;
+    }
+    .cart img {
+        width: 18px;
+    }
+    .userImg img {
+        width: 30px;
+    }
+    .user {
+        position: static;
+    }
+    .cart_content {
+        top: 90px;
+        left: 50%;
+        right: auto;
+        height: auto;
+        width: 95%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+    }
+}
 .burger_icon[clicked] ~ nav {
     display: block;
     position: absolute;
