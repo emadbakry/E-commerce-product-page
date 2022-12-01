@@ -492,6 +492,16 @@ main {
 .prod_amount_div button#subtrac_item { 
     margin-bottom: 4.3px;
 }
+#add_to_cart {
+    position: relative;
+}
+#add_to_cart::before {
+    content: url(./images/icon-cart-copy.svg);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: calc(50% - 65px);
+    top: 50%;
+}
 /* add to cart btn */
 #add_to_cart, .check_out_btn {
     background-color: var(--main-color);
