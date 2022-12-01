@@ -173,8 +173,10 @@ ul.links li {
 }
 .cart_content > p {
     text-align: center;
-    line-height: 70px;
+    line-height: 150px;
     display: none;
+    font-weight: 700;
+    color: var(--dark-gray);
 }
 .cart_content .hidden + p {
     display: block;
